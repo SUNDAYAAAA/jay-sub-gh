@@ -1,9 +1,9 @@
 {
  "nodes": 1491,
- "groups": 18,
- "rules": 196,
+ "groups": 19,
+ "rules": 207,
  "skipped_parse": 150,
- "built_at": "2026-10-02 13:42:56",
+ "built_at": "2026-10-03 08:53:14",
  "regions": {
   "ES": 8,
   "US": 148,

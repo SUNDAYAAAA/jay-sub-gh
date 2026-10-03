@@ -18289,7 +18289,11 @@ proxy-groups:
   - G_RELAY-141.101.114.102-1026
   - CA-24
 - name: 美国
-  type: select
+  type: url-test
+  url: http://cp.cloudflare.com/generate_204
+  interval: 300
+  tolerance: 40
+  lazy: false
   proxies:
   - US_[Eternity-013]-_US_US-37.19.198.244-0134-65.972MB
   - US_US_US-167.88.62.68-5154
@@ -18440,7 +18444,11 @@ proxy-groups:
   - US_D_US_hos[_NF_AI_]_dokng.com_6b7efaad
   - US-31
 - name: 日本
-  type: select
+  type: url-test
+  url: http://cp.cloudflare.com/generate_204
+  interval: 300
+  tolerance: 40
+  lazy: false
   proxies:
   - JP_C_JP_hos[_NF_AI_]_dokng.com_43c84f6b
   - JP_JP_JP-152.175.36.141-3135
@@ -18478,7 +18486,11 @@ proxy-groups:
   - JP_JP_JP-140.238.55.84-5324
   - JP_[NoMoreWalls-245]-_JP_-日本-JPN-2
 - name: 港台
-  type: select
+  type: url-test
+  url: http://cp.cloudflare.com/generate_204
+  interval: 300
+  tolerance: 40
+  lazy: false
   proxies:
   - HK_HK_HK-103.149.182.105-0267
   - HK_[free18-028]-_HK__香港_81
@@ -18525,7 +18537,11 @@ proxy-groups:
   - TW_[NoMoreWalls-233]-台湾-@ripaojiedian
   - TW_TW_TW-60.250.152.229-3251
 - name: 新加坡
-  type: select
+  type: url-test
+  url: http://cp.cloudflare.com/generate_204
+  interval: 300
+  tolerance: 40
+  lazy: false
   proxies:
   - SG_[freeSub-057]-C_SG_hos[_NF_AI_]_dokng.com_def28fce
   - SG_SG_SG-146.190.82.241-2325
@@ -18573,7 +18589,11 @@ proxy-groups:
   - SG_SG_SG-47.128.146.47-5359
   - SG_SG_SG-202.79.172.53-1859
 - name: 韩国
-  type: select
+  type: url-test
+  url: http://cp.cloudflare.com/generate_204
+  interval: 300
+  tolerance: 40
+  lazy: false
   proxies:
   - KR_KR_KR-43.203.172.207-5314
   - KR_KR_KR-3.36.88.22-5335
@@ -18616,7 +18636,11 @@ proxy-groups:
   - KR_[ermaozi-060]-_KR_-韩国-KOR-1
   - KR_KR_KR-123.140.124.24-2991
 - name: 欧洲
-  type: select
+  type: url-test
+  url: http://cp.cloudflare.com/generate_204
+  interval: 300
+  tolerance: 40
+  lazy: false
   proxies:
   - DE_[clashfree-228]-_DE_-DE-VLESS-389-free-nodes
   - DE_de-hn.spacev67.com
@@ -18965,7 +18989,11 @@ proxy-groups:
   - RU_[free18-049]-_RU__俄罗斯_113
   - RU-12
 - name: 北美其他
-  type: select
+  type: url-test
+  url: http://cp.cloudflare.com/generate_204
+  interval: 300
+  tolerance: 40
+  lazy: false
   proxies:
   - CA_CA_2
   - CA_CA_2
@@ -19104,7 +19132,11 @@ proxy-groups:
   - AU_AU_AU-103.224.212.216-1718
   - AU_AU_AU-103.224.212.211-1059
 - name: 其他地区
-  type: select
+  type: url-test
+  url: http://cp.cloudflare.com/generate_204
+  interval: 300
+  tolerance: 40
+  lazy: false
   proxies:
   - G_vless-897225014
   - G_[clashfree-209]-未知-VLESS-356-free-nodes
@@ -19831,6 +19863,17 @@ proxy-groups:
   - 欧洲
   - 港台
   - 总模式
+- name: YouTube
+  type: select
+  proxies:
+  - 美国
+  - 日本
+  - 港台
+  - 新加坡
+  - 韩国
+  - 欧洲
+  - 总模式
+  - 自动选择
 - name: Apple
   type: select
   proxies:
@@ -20017,6 +20060,17 @@ rules:
 - DOMAIN-SUFFIX,google.cn,DIRECT
 - DOMAIN-SUFFIX,gg-google,DIRECT
 - DOMAIN-SUFFIX,223.5.5.5,DIRECT
+- DOMAIN-SUFFIX,youtube.com,YouTube
+- DOMAIN-SUFFIX,youtube-nocookie.com,YouTube
+- DOMAIN-SUFFIX,ytimg.com,YouTube
+- DOMAIN-SUFFIX,googlevideo.com,YouTube
+- DOMAIN-SUFFIX,youtu.be,YouTube
+- DOMAIN-SUFFIX,youtube.googleapis.com,YouTube
+- DOMAIN-SUFFIX,gvt1.com,YouTube
+- DOMAIN-SUFFIX,gvt2.com,YouTube
+- DOMAIN-SUFFIX,withyoutube.com,YouTube
+- DOMAIN-SUFFIX,youtubekids.com,YouTube
+- DOMAIN-SUFFIX,m.youtube.com,YouTube
 - DOMAIN-SUFFIX,google.com,自动选择
 - DOMAIN-SUFFIX,youtube.com,自动选择
 - DOMAIN-SUFFIX,ytimg.com,自动选择
