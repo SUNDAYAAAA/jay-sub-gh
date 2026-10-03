@@ -1,8 +1,26 @@
 {
- "nodes": 0,
- "groups": 11,
+ "nodes": 94,
+ "groups": 19,
  "rules": 207,
  "skipped_parse": 0,
- "built_at": "2026-10-03 23:45:55",
- "regions": {}
+ "built_at": "2026-10-04 00:20:42",
+ "regions": {
+  "DE": 9,
+  "OTHER": 34,
+  "NL": 17,
+  "GB": 2,
+  "PL": 2,
+  "CH": 1,
+  "CA": 7,
+  "JP": 4,
+  "FR": 2,
+  "PT": 1,
+  "US": 7,
+  "SE": 2,
+  "IL": 1,
+  "HK": 1,
+  "KR": 2,
+  "SG": 1,
+  "NO": 1
+ }
 }
