@@ -1,9 +1,9 @@
 {
- "nodes": 964,
+ "nodes": 339,
  "groups": 19,
  "rules": 207,
  "skipped_parse": 0,
- "built_at": "2026-10-04 00:46:05",
+ "built_at": "2026-10-04 10:16:07",
  "regions": {
   "OTHER": 611,
   "RU": 15,
