@@ -1,9 +1,9 @@
 {
  "nodes": 400,
  "groups": 19,
- "rules": 207,
+ "rules": 3847,
  "skipped_parse": 0,
- "built_at": "2026-10-04 10:57:38",
+ "built_at": "2026-10-04 12:58:21",
  "regions": {
   "GB": 94,
   "ID": 9,
