@@ -423,7 +423,7 @@ proxy-groups:
   - DIRECT
 - name: 自动选择
   type: url-test
-  url: http://cp.cloudflare.com/generate_204
+  url: http://www.gstatic.com/generate_204
   interval: 120
   tolerance: 20
   lazy: false
@@ -482,7 +482,7 @@ proxy-groups:
   - YouTube-09
 - name: 负载均衡
   type: load-balance
-  url: http://cp.cloudflare.com/generate_204
+  url: http://www.gstatic.com/generate_204
   interval: 300
   lazy: false
   strategy: round-robin
@@ -595,7 +595,7 @@ proxy-groups:
   - YouTube-09
 - name: 美国
   type: url-test
-  url: http://cp.cloudflare.com/generate_204
+  url: http://www.gstatic.com/generate_204
   interval: 300
   tolerance: 40
   lazy: false
@@ -617,7 +617,7 @@ proxy-groups:
   - 美国-15
 - name: 新加坡
   type: url-test
-  url: http://cp.cloudflare.com/generate_204
+  url: http://www.gstatic.com/generate_204
   interval: 300
   tolerance: 40
   lazy: false
@@ -627,7 +627,7 @@ proxy-groups:
   - 新加坡-03
 - name: 香港
   type: url-test
-  url: http://cp.cloudflare.com/generate_204
+  url: http://www.gstatic.com/generate_204
   interval: 300
   tolerance: 40
   lazy: false
@@ -635,7 +635,7 @@ proxy-groups:
   - 香港-01
 - name: 日本
   type: url-test
-  url: http://cp.cloudflare.com/generate_204
+  url: http://www.gstatic.com/generate_204
   interval: 300
   tolerance: 40
   lazy: false
@@ -644,7 +644,7 @@ proxy-groups:
   - 日本-02
 - name: 韩国
   type: url-test
-  url: http://cp.cloudflare.com/generate_204
+  url: http://www.gstatic.com/generate_204
   interval: 300
   tolerance: 40
   lazy: false
@@ -652,7 +652,7 @@ proxy-groups:
   - 韩国-01
 - name: 其他地区
   type: url-test
-  url: http://cp.cloudflare.com/generate_204
+  url: http://www.gstatic.com/generate_204
   interval: 300
   tolerance: 40
   lazy: false
