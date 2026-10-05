@@ -37,802 +37,131 @@ dns:
   - https://doh.pub/dns-query
 proxies:
 - name: 美国-01
-  type: vless
-  server: 192.200.160.14
-  port: 2053
-  uuid: 53bea386-912e-4fe3-9eff-59c2285a176c
+  type: vmess
+  server: 141.101.114.133
+  port: 443
+  uuid: fcfaec91-6096-44d8-956c-7868d9e874b1
+  alterId: 0
+  cipher: auto
   udp: true
   tls: true
-  servername: 9.neshaan.org
-  skip-cert-verify: false
-  alpn:
-  - http/1.1
+  servername: 141.101.114.133
+  skip-cert-verify: true
   network: ws
   ws-opts:
-    path: /admins?ed=2560
+    path: /ray
     headers:
-      Host: 9.neshaan.org
+      Host: lg1.cfcdn1.xyz
 - name: 美国-02
   type: vmess
-  server: cf-lt.sharecentre.online
+  server: 141.101.115.140
   port: 443
-  uuid: 20e92881-5fb4-4b05-bc77-57929476dc69
+  uuid: 5f64fa65-7b14-49c5-954d-aa15c6bfcacd
   alterId: 0
   cipher: auto
   udp: true
   tls: true
-  servername: cf-lt.sharecentre.online
+  servername: 141.101.115.140
   skip-cert-verify: true
   network: ws
   ws-opts:
-    path: /shirker
+    path: /dongtaiwang.com
     headers:
-      Host: sg-gcore.sharecentre.online
+      Host: clash6.ssr-free.xyz
 - name: 美国-03
-  type: vmess
-  server: cdnde.irteyz.today
+  type: vless
+  server: 104.21.74.8
   port: 443
-  uuid: 3b5e258e-8c5e-45d3-b7d2-02c8f5fc0bb2
-  alterId: 64
-  cipher: auto
+  uuid: cf63446e-f6b7-4d34-b7ed-d8648eeed0f7
   udp: true
   tls: true
-  servername: cdnde.irteyz.today
-  skip-cert-verify: true
+  servername: vps.181110.xyz
+  skip-cert-verify: false
   network: ws
   ws-opts:
-    path: /
+    path: /cf63446e-vl
     headers:
-      Host: cdnde.irteyz.today
-- name: 美国-04
-  type: vmess
-  server: us-dp2.sharecentre.online
+      Host: vps.181110.xyz
+- name: 香港-01
+  type: vless
+  server: 188.114.97.6
   port: 443
-  uuid: 20e92881-5fb4-4b05-bc77-57929476dc69
+  uuid: 30610baf-4645-4c7b-9a22-0d0a0a79eab5
+  udp: true
+  tls: true
+  servername: mao.kipfel.kdns.fr
+  skip-cert-verify: false
+  network: ws
+  ws-opts:
+    path: /glasspanel/guest000_0_5de14443985f/
+    headers:
+      Host: mao.kipfel.kdns.fr
+- name: 其他-01
+  type: vmess
+  server: 104.27.1.129
+  port: 443
+  uuid: 824c58b1-65ba-4680-a609-663a000dbb92
   alterId: 0
   cipher: auto
   udp: true
   tls: true
-  servername: us-dp2.sharecentre.online
+  servername: 104.27.1.129
   skip-cert-verify: true
   network: ws
   ws-opts:
-    path: /shirker
-    headers:
-      Host: us-dp2.sharecentre.online
-- name: 美国-05
+    path: /wss13889
+    headers: null
+- name: 其他-02
   type: vmess
-  server: cg1c04.waimaojd.com
+  server: 104.16.89.44
   port: 443
-  uuid: be8e3136-b874-4085-bd23-ec3699300490
+  uuid: 9a18cbb1-81d2-4720-9f09-46ea276b6ddb
   alterId: 0
   cipher: auto
   udp: true
   tls: true
-  servername: cg1c04.waimaojd.com
+  servername: 104.16.89.44
   skip-cert-verify: true
   network: ws
   ws-opts:
-    path: /api/v1/graphql
+    path: /huhublog
     headers:
-      Host: cg1c04.waimaojd.com
-- name: 美国-06
+      Host: zhuyong.hucloud-dns.xyz
+- name: 其他-03
   type: vless
-  server: news.zoom.us
-  port: 8443
-  uuid: 29c3dd6b-b164-40ca-a0d5-f06aca52a8b2
-  udp: true
-  tls: true
-  servername: u.srilankangrill.online
-  skip-cert-verify: false
-  network: ws
-  ws-opts:
-    path: /
-    headers:
-      Host: u.srilankangrill.online
-- name: 美国-07
-  type: vless
-  server: support.zoom.us
+  server: 104.26.15.4
   port: 443
-  uuid: 6680846a-8a57-4dfd-9a0e-63209cfc8535
+  uuid: 1e534c59-85c2-4042-a407-e491f68cb3a5
   udp: true
   tls: true
-  servername: support.zoom.us.yxls.eu.cc
-  skip-cert-verify: false
-  network: ws
-  ws-opts:
-    path: /sg-amz
-    headers:
-      Host: support.zoom.us.yxls.eu.cc
-- name: 美国-08
-  type: vless
-  server: mfa.gov.ua
-  port: 2087
-  uuid: 77777777-8a3e-6666-b6d1-a9c5f0e8b3a2
-  udp: true
-  tls: true
-  servername: fx3l5i2wdfxln0.fx6hsv0.ccwu.cc
-  skip-cert-verify: false
-  network: ws
-  ws-opts:
-    path: /
-    headers:
-      Host: fx3l5i2wdfxln0.fx6hsv0.ccwu.cc
-- name: 美国-09
-  type: vless
-  server: rvg-production-8249.up.railway.app
-  port: 443
-  uuid: f1f47653-d57b-5917-fa47-c80823a8b7f3
-  udp: true
-  tls: true
-  servername: rvg-production-8249.up.railway.app
+  servername: kJz42CNi3-kRCUj2-gQs8vEs15.foRNeWiRAN-1010.wOrKERs.dEV
   skip-cert-verify: false
   alpn:
   - http/1.1
   network: ws
   ws-opts:
-    path: /ws/f1f47653-d57b-5917-fa47-c80823a8b7f3
+    path: /vl/Z8Ag5xQbwmhIHsvyDj3?ed=2560
     headers:
-      Host: rvg-production-8249.up.railway.app
-- name: 美国-10
-  type: vless
-  server: www.cnae.top
-  port: 443
-  uuid: eeb6823c-b926-4ea2-866a-5542edd26e59
-  udp: true
-  tls: true
-  servername: t1s1.rittbo.kdns.fr
-  skip-cert-verify: false
-  network: ws
-  ws-opts:
-    path: /
-    headers:
-      Host: t1s1.rittbo.kdns.fr
-- name: 美国-11
+      Host: kjz42cni3-krcuj2-gqs8ves15.fornewiran-1010.workers.dev
+- name: 其他-04
   type: vmess
-  server: 192.96.204.250
-  port: 443
-  uuid: aba50dd4-5484-3b05-b14a-4661caf862d5
-  alterId: 4
-  cipher: auto
-  udp: true
-  tls: true
-  servername: usa-washington.lvuft.com
-  skip-cert-verify: true
-  network: ws
-  ws-opts:
-    path: /ws
-    headers:
-      Host: usa-washington.lvuft.com
-- name: 美国-12
-  type: vless
-  server: 139.64.235.7
+  server: 104.17.77.77
   port: 8443
-  uuid: 7967bf59-57e3-4cde-9898-527b0fe60022
-  udp: true
-  tls: true
-  servername: speed.dulacloud.store
-  skip-cert-verify: false
-  network: ws
-  ws-opts:
-    path: /dula?Telegram-WangCai2fp=chrome
-    headers:
-      Host: speed.dulacloud.store
-- name: 美国-13
-  type: vmess
-  server: cg1c07.waimaojd.com
-  port: 443
-  uuid: be8e3136-b874-4085-bd23-ec3699300490
+  uuid: 60441548-b68e-43b2-8191-e3b884be4b3c
   alterId: 0
   cipher: auto
   udp: true
   tls: true
-  servername: cg1c07.waimaojd.com
+  servername: v2ray1.dozapp.xyz
   skip-cert-verify: true
   network: ws
   ws-opts:
-    path: /api/v1/graphql
-    headers:
-      Host: cg1c07.waimaojd.com
-- name: 美国-14
-  type: vless
-  server: 108.165.216.7
-  port: 8443
-  uuid: 7967bf59-57e3-4cde-9898-527b0fe60022
-  udp: true
-  tls: true
-  servername: speed.dulacloud.store
-  skip-cert-verify: false
-  network: ws
-  ws-opts:
-    path: /dula?Telegram-WangCai2
-    headers:
-      Host: speed.dulacloud.store
-- name: 美国-15
-  type: vmess
-  server: buyvm.sharecentre.online
-  port: 443
-  uuid: 20e92881-5fb4-4b05-bc77-57929476dc69
-  alterId: 0
-  cipher: auto
-  udp: true
-  tls: true
-  servername: buyvm.sharecentre.online
-  skip-cert-verify: true
-  network: ws
-  ws-opts:
-    path: /shirker
-    headers:
-      Host: buyvm.sharecentre.online
-- name: 新加坡-01
-  type: vless
-  server: 104.16.10.233
-  port: 443
-  uuid: b8d8a5b0-867f-4491-b4e4-30edc04bb10e
-  udp: true
-  tls: true
-  servername: u.srilankangrill.online
-  skip-cert-verify: false
-  network: ws
-  ws-opts:
-    path: /
-    headers:
-      Host: u.srilankangrill.online
-- name: 新加坡-02
-  type: vmess
-  server: qC1VKPMvodz2UqjI.v.3dns.vip
-  port: 443
-  uuid: 9b31490d-190e-4ef1-af0a-7ccab3e7c3b5
-  alterId: 0
-  cipher: auto
-  udp: true
-  tls: true
-  servername: qC1VKPMvodz2UqjI.v.3dns.vip
-  skip-cert-verify: true
-  network: ws
-  ws-opts:
-    path: /ws-vmess
-    headers:
-      Host: qC1VKPMvodz2UqjI.v.3dns.vip
-- name: 新加坡-03
-  type: vmess
-  server: 118.107.46.173
-  port: 443
-  uuid: 418048af-a293-4b99-9b0c-98ca3580dd24
-  alterId: 64
-  cipher: auto
-  udp: true
-  tls: true
-  servername: 118.107.46.173
-  skip-cert-verify: true
-  network: ws
-  ws-opts:
-    path: /path/080712342310
+    path: /lMnsZUN4/
     headers: null
-- name: 新加坡-04
-  type: vmess
-  server: 6JiziO8PxQAXBAtZ.v.3dns.vip
-  port: 443
-  uuid: 88888888-8888-8888-8888-888888888888
-  alterId: 0
-  cipher: auto
-  udp: true
-  tls: true
-  servername: 6JiziO8PxQAXBAtZ.v.3dns.vip
-  skip-cert-verify: true
-  network: ws
-  ws-opts:
-    path: /ws-vmess
-    headers:
-      Host: 6JiziO8PxQAXBAtZ.v.3dns.vip
-- name: 新加坡-05
+- name: 其他-05
   type: vless
-  server: 140.245.120.16
+  server: 104.19.48.107
   port: 443
-  uuid: 92d67828-4c56-4795-af5a-f387651380dc
-  udp: true
-  tls: true
-  servername: trackydev.site
-  skip-cert-verify: false
-  network: ws
-  ws-opts:
-    path: /
-- name: 新加坡-06
-  type: vless
-  server: 104.16.10.189
-  port: 443
-  uuid: b8d8a5b0-867f-4491-b4e4-30edc04bb10e
-  udp: true
-  tls: true
-  servername: u.srilankangrill.online
-  skip-cert-verify: false
-  network: ws
-  ws-opts:
-    path: /
-    headers:
-      Host: u.srilankangrill.online
-- name: 新加坡-07
-  type: vmess
-  server: 103.253.26.134
-  port: 443
-  uuid: aba50dd4-5484-3b05-b14a-4661caf862d5
-  alterId: 4
-  cipher: auto
-  udp: true
-  tls: true
-  servername: eeh7iewe.com
-  skip-cert-verify: true
-  network: ws
-  ws-opts:
-    path: /ws
-    headers:
-      Host: eeh7iewe.com
-- name: 新加坡-08
-  type: vless
-  server: 104.17.117.137
-  port: 443
-  uuid: b8d8a5b0-867f-4491-b4e4-30edc04bb10e
-  udp: true
-  tls: true
-  servername: u.srilankangrill.online
-  skip-cert-verify: false
-  network: ws
-  ws-opts:
-    path: /
-    headers:
-      Host: u.srilankangrill.online
-- name: 新加坡-09
-  type: vless
-  server: 104.21.5.75
-  port: 443
-  uuid: b8d8a5b0-867f-4491-b4e4-30edc04bb10e
-  udp: true
-  tls: true
-  servername: u.srilankangrill.online
-  skip-cert-verify: false
-  network: ws
-  ws-opts:
-    path: /
-    headers:
-      Host: u.srilankangrill.online
-- name: 新加坡-10
-  type: vless
-  server: 104.16.10.198
-  port: 443
-  uuid: b8d8a5b0-867f-4491-b4e4-30edc04bb10e
-  udp: true
-  tls: true
-  servername: u.srilankangrill.online
-  skip-cert-verify: false
-  network: ws
-  ws-opts:
-    path: /
-    headers:
-      Host: u.srilankangrill.online
-- name: 新加坡-11
-  type: vless
-  server: 104.24.11.68
-  port: 443
-  uuid: b8d8a5b0-867f-4491-b4e4-30edc04bb10e
-  udp: true
-  tls: true
-  servername: u.srilankangrill.online
-  skip-cert-verify: false
-  network: ws
-  ws-opts:
-    path: /
-    headers:
-      Host: u.srilankangrill.online
-- name: 新加坡-12
-  type: vless
-  server: sgip.harry.lv
-  port: 443
-  uuid: 5d75a660-f04e-4301-a41b-d394bae03970
-  udp: true
-  tls: true
-  servername: sgcf.harry.lv
-  skip-cert-verify: false
-  network: ws
-  ws-opts:
-    path: '%2Fsg'
-    headers:
-      Host: sgcf.harry.lv
-- name: 新加坡-13
-  type: vless
-  server: 141.193.213.21
-  port: 8443
-  uuid: 29c3dd6b-b164-40ca-a0d5-f06aca52a8b2
-  udp: true
-  tls: true
-  servername: u.srilankangrill.online
-  skip-cert-verify: false
-  network: ws
-  ws-opts:
-    path: /
-    headers:
-      Host: u.srilankangrill.online
-- name: 新加坡-14
-  type: vmess
-  server: ASaqYIDZa9WDQ9Kq.v.3dns.vip
-  port: 443
-  uuid: 88888888-8888-8888-8888-888888888888
-  alterId: 0
-  cipher: auto
-  udp: true
-  tls: true
-  servername: ASaqYIDZa9WDQ9Kq.v.3dns.vip
-  skip-cert-verify: true
-  network: ws
-  ws-opts:
-    path: /ws-vmess
-    headers:
-      Host: ASaqYIDZa9WDQ9Kq.v.3dns.vip
-- name: 新加坡-15
-  type: vless
-  server: 104.16.10.235
-  port: 443
-  uuid: b8d8a5b0-867f-4491-b4e4-30edc04bb10e
-  udp: true
-  tls: true
-  servername: u.srilankangrill.online
-  skip-cert-verify: false
-  network: ws
-  ws-opts:
-    path: /
-    headers:
-      Host: u.srilankangrill.online
-- name: 香港-01
-  type: vless
-  server: 27.50.49.7
-  port: 8443
-  uuid: 7967bf59-57e3-4cde-9898-527b0fe60022
-  udp: true
-  tls: true
-  servername: speed.dulacloud.store
-  skip-cert-verify: false
-  network: ws
-  ws-opts:
-    path: /dula?Telegram-WangCai2
-    headers:
-      Host: speed.dulacloud.store
-- name: 香港-02
-  type: vmess
-  server: 5rdSzVz7YjrEhY9t.v.3dns.vip
-  port: 443
-  uuid: 106a1eeb495c4deab54143491c3e0223
-  alterId: 0
-  cipher: auto
-  udp: true
-  tls: true
-  servername: 5rdSzVz7YjrEhY9t.v.3dns.vip
-  skip-cert-verify: true
-  network: ws
-  ws-opts:
-    path: /ws-vmess
-    headers:
-      Host: 5rdSzVz7YjrEhY9t.v.3dns.vip
-- name: 香港-03
-  type: vmess
-  server: 6jdvarazgu3qqr6q.v.3dns.vip
-  port: 443
-  uuid: f23bb427-c1f9-4373-876c-2f43e9f790f3
-  alterId: 0
-  cipher: auto
-  udp: true
-  tls: true
-  servername: 6jdvarazgu3qqr6q.v.3dns.vip
-  skip-cert-verify: true
-  network: ws
-  ws-opts:
-    path: /ws-vmess
-    headers: null
-- name: 香港-04
-  type: vless
-  server: 91.193.58.117
-  port: 443
-  uuid: 9419f782-b18e-4c4b-ae95-a7a279fd021f
-  udp: true
-  tls: true
-  servername: jamph131-1228.pages.dev
-  skip-cert-verify: false
-  network: ws
-  ws-opts:
-    path: Telegram-WangCai2
-    headers:
-      Host: jamph131-1228.pages.dev
-- name: 香港-05
-  type: vmess
-  server: 93ucrn4i0pffuabk.v.3dns.vip
-  port: 443
-  uuid: f23bb427c1f94373876c2f43e9f790f3
-  alterId: 0
-  cipher: auto
-  udp: true
-  tls: true
-  servername: 93ucrn4i0pffuabk.v.3dns.vip
-  skip-cert-verify: true
-  network: ws
-  ws-opts:
-    path: /ws-vmess
-    headers: null
-- name: 香港-06
-  type: vmess
-  server: aZW0eunYVdvRe73k.v.3dns.vip
-  port: 443
-  uuid: 88888888-8888-8888-8888-888888888888
-  alterId: 0
-  cipher: auto
-  udp: true
-  tls: true
-  servername: aZW0eunYVdvRe73k.v.3dns.vip
-  skip-cert-verify: true
-  network: ws
-  ws-opts:
-    path: /ws-vmess
-    headers:
-      Host: aZW0eunYVdvRe73k.v.3dns.vip
-- name: 香港-07
-  type: vmess
-  server: u2frxj0g13vdi0wo.v.3dns.vip
-  port: 443
-  uuid: f23bb427c1f94373876c2f43e9f790f3
-  alterId: 0
-  cipher: auto
-  udp: true
-  tls: true
-  servername: u2frxj0g13vdi0wo.v.3dns.vip
-  skip-cert-verify: true
-  network: ws
-  ws-opts:
-    path: /ws-vmess
-    headers:
-      Host: U2FRxj0G13vDI0Wo.v.3dns.vip
-- name: 香港-08
-  type: vmess
-  server: 194.99.79.26
-  port: 443
-  uuid: 03fcc618-b93d-6796-6aed-8a38c975d581
-  alterId: 0
-  cipher: auto
-  udp: true
-  tls: true
-  servername: aksai.org
-  skip-cert-verify: true
-  network: ws
-  ws-opts:
-    path: /linkvws
-    headers:
-      Host: aksai.org
-- name: 香港-09
-  type: vmess
-  server: FhoYLIpxDD9eB9uZ.v.3dns.vip
-  port: 443
-  uuid: 9b31490d-190e-4ef1-af0a-7ccab3e7c3b5
-  alterId: 0
-  cipher: auto
-  udp: true
-  tls: true
-  servername: FhoYLIpxDD9eB9uZ.v.3dns.vip
-  skip-cert-verify: true
-  network: ws
-  ws-opts:
-    path: /ws-vmess
-    headers:
-      Host: FhoYLIpxDD9eB9uZ.v.3dns.vip
-- name: 香港-10
-  type: vmess
-  server: 156.225.67.81
-  port: 443
-  uuid: 3fd637ad-46fe-4f85-a6e8-86b00bca1122
-  alterId: 64
-  cipher: auto
-  udp: true
-  tls: true
-  servername: 156.225.67.81
-  skip-cert-verify: true
-  network: ws
-  ws-opts:
-    path: /path/1689767805929
-    headers: null
-- name: 香港-11
-  type: vmess
-  server: kBONDXW9liFCi4h4.v.3dns.vip
-  port: 443
-  uuid: 88888888-8888-8888-8888-888888888888
-  alterId: 0
-  cipher: auto
-  udp: true
-  tls: true
-  servername: kBONDXW9liFCi4h4.v.3dns.vip
-  skip-cert-verify: true
-  network: ws
-  ws-opts:
-    path: /ws-vmess
-    headers:
-      Host: kBONDXW9liFCi4h4.v.3dns.vip
-- name: 香港-12
-  type: vmess
-  server: 47.76.102.39
-  port: 443
-  uuid: f23bb427c1f94373876c2f43e9f790f3
-  alterId: 0
-  cipher: auto
-  udp: true
-  tls: true
-  servername: ex1ogt73nzpqkac2.v.3dns.vip
-  skip-cert-verify: true
-  network: ws
-  ws-opts:
-    path: /ws-vmess
-    headers: null
-- name: 香港-13
-  type: vmess
-  server: m01c7b2z26dtqgee.v.3dns.vip
-  port: 443
-  uuid: f23bb427c1f94373876c2f43e9f790f3
-  alterId: 0
-  cipher: auto
-  udp: true
-  tls: true
-  servername: m01c7b2z26dtqgee.v.3dns.vip
-  skip-cert-verify: true
-  network: ws
-  ws-opts:
-    path: /ws-vmess
-    headers:
-      Host: m01c7b2z26dtqgee.v.3dns.vip
-- name: 香港-14
-  type: vmess
-  server: 47.86.107.119
-  port: 443
-  uuid: f23bb427c1f94373876c2f43e9f790f3
-  alterId: 0
-  cipher: auto
-  udp: true
-  tls: true
-  servername: 47.86.107.119
-  skip-cert-verify: true
-  network: ws
-  ws-opts:
-    path: /ws-vmess
-    headers:
-      Host: lcv8v9l7OyamxxfZ.v.3dns.vip
-- name: 香港-15
-  type: vless
-  server: proxyip.hk.cmliussss.net
-  port: 443
-  uuid: 7b102311-43fd-4e8f-877e-8090623c101d
-  udp: true
-  tls: true
-  servername: vp10.pages.dev
-  skip-cert-verify: false
-  network: ws
-  ws-opts:
-    path: /
-    headers:
-      Host: vp10.pages.dev
-- name: 日本-01
-  type: vless
-  server: 89.125.244.28
-  port: 443
-  uuid: 1d16c6e0-1bbe-435b-b661-90043fee999c
-  udp: true
-  tls: true
-  servername: notls.lukongtou.eu.org
-  skip-cert-verify: false
-  network: ws
-  ws-opts:
-    path: Telegram-WangCai2
-    headers:
-      Host: notls.lukongtou.eu.org
-- name: 日本-02
-  type: vless
-  server: 64.204.49.68
-  port: 443
-  uuid: 7b102311-43fd-4e8f-877e-8090623c101d
-  udp: true
-  tls: true
-  servername: vp10.pages.dev
-  skip-cert-verify: false
-  network: ws
-  ws-opts:
-    path: /fp=firefox
-    headers:
-      Host: vp10.pages.dev
-- name: 日本-03
-  type: vmess
-  server: Z9FfBx3zs2q5O0BG.v.3dns.vip
-  port: 443
-  uuid: 88888888-8888-8888-8888-888888888888
-  alterId: 0
-  cipher: auto
-  udp: true
-  tls: true
-  servername: Z9FfBx3zs2q5O0BG.v.3dns.vip
-  skip-cert-verify: true
-  network: ws
-  ws-opts:
-    path: /ws-vmess
-    headers:
-      Host: Z9FfBx3zs2q5O0BG.v.3dns.vip
-- name: 日本-04
-  type: vless
-  server: 167.179.110.68
-  port: 8443
-  uuid: 1d16c6e0-1bbe-435b-b661-90043fee999c
-  udp: true
-  tls: true
-  servername: notls.lukongtou.eu.org
-  skip-cert-verify: false
-  network: ws
-  ws-opts:
-    path: /Telegram-WangCai2
-    headers:
-      Host: notls.lukongtou.eu.org
-- name: 日本-05
-  type: vless
-  server: 82.40.42.204
-  port: 8443
-  uuid: cf39fab0-bb85-42cb-9945-2ad69d78e575
-  udp: true
-  tls: true
-  servername: rubifen.adaspoloandco.com
-  skip-cert-verify: false
-  network: ws
-  ws-opts:
-    path: /GOrbEh
-    headers:
-      Host: rubifen.adaspoloandco.com
-- name: 日本-06
-  type: vmess
-  server: xu9yCnEuTIx74zA0.v.3dns.vip
-  port: 443
-  uuid: 9b31490d-190e-4ef1-af0a-7ccab3e7c3b5
-  alterId: 0
-  cipher: auto
-  udp: true
-  tls: true
-  servername: xu9yCnEuTIx74zA0.v.3dns.vip
-  skip-cert-verify: true
-  network: ws
-  ws-opts:
-    path: /ws-vmess
-    headers:
-      Host: xu9yCnEuTIx74zA0.v.3dns.vip
-- name: 日本-07
-  type: vless
-  server: 45.192.200.66
-  port: 8443
-  uuid: cf39fab0-bb85-42cb-9945-2ad69d78e575
-  udp: true
-  tls: true
-  servername: rubifen.adaspoloandco.com
-  skip-cert-verify: false
-  network: ws
-  ws-opts:
-    path: /GOrbEh
-    headers:
-      Host: rubifen.adaspoloandco.com
-- name: 日本-08
-  type: vmess
-  server: jp.vpn.taiaise.cn
-  port: 443
-  uuid: 060aede7-11ea-4032-b025-6c4168a5182e
-  alterId: 0
-  cipher: auto
-  udp: true
-  tls: true
-  servername: jp.vpn.taiaise.cn
-  skip-cert-verify: true
-  network: ws
-  ws-opts:
-    path: /jp
-    headers:
-      Host: jp.vpn.taiaise.cn
-- name: 日本-09
-  type: vless
-  server: 154.31.114.162
-  port: 8443
   uuid: 4e4f1f70-5e56-4a76-bb9d-db087f4690c4
   udp: true
   tls: true
@@ -843,334 +172,239 @@ proxies:
     path: /tyxyws
     headers:
       Host: jp3.yohototo.top
-- name: 日本-10
-  type: vless
-  server: 8.219.155.125
-  port: 443
-  uuid: 7b102311-43fd-4e8f-877e-8090623c101d
-  udp: true
-  tls: true
-  servername: vp10.pages.dev
-  skip-cert-verify: false
-  network: ws
-  ws-opts:
-    path: /
-    headers:
-      Host: vp10.pages.dev
-- name: 日本-11
-  type: vless
-  server: api.w2m.ink
-  port: 443
-  uuid: 8344360f-0349-4784-a19f-33fd92e89389
-  udp: true
-  tls: true
-  servername: api.w2m.ink
-  skip-cert-verify: true
-  network: ws
-  ws-opts:
-    path: /v2
-    headers:
-      Host: api.w2m.ink
-- name: 韩国-01
-  type: vmess
-  server: 8nTzyR5KNivfabaT.v.3dns.vip
-  port: 443
-  uuid: 88888888-8888-8888-8888-888888888888
-  alterId: 0
-  cipher: auto
-  udp: true
-  tls: true
-  servername: 8nTzyR5KNivfabaT.v.3dns.vip
-  skip-cert-verify: true
-  network: ws
-  ws-opts:
-    path: /ws-vmess
-    headers:
-      Host: 8nTzyR5KNivfabaT.v.3dns.vip
-- name: 韩国-02
-  type: vmess
-  server: IM7Zz1n2ZNPU8orN.v.3dns.vip
-  port: 443
-  uuid: 106a1eeb495c4deab54143491c3e0223
-  alterId: 0
-  cipher: auto
-  udp: true
-  tls: true
-  servername: IM7Zz1n2ZNPU8orN.v.3dns.vip
-  skip-cert-verify: true
-  network: ws
-  ws-opts:
-    path: /ws-vmess
-    headers:
-      Host: IM7Zz1n2ZNPU8orN.v.3dns.vip
-- name: 韩国-03
-  type: vmess
-  server: 146.56.162.25
-  port: 443
-  uuid: 91646f9a-b4e9-4aca-bfe3-8892b3e58fe7
-  alterId: 0
-  cipher: auto
-  udp: true
-  tls: true
-  servername: 146.56.162.25
-  skip-cert-verify: true
-  network: ws
-  ws-opts:
-    path: /ray
-    headers:
-      Host: lg30.cfcdn3.xyz
-- name: 韩国-04
-  type: vmess
-  server: VdBwdXszswRhpjop.v.3dns.vip
-  port: 443
-  uuid: 106a1eeb495c4deab54143491c3e0223
-  alterId: 0
-  cipher: auto
-  udp: true
-  tls: true
-  servername: VdBwdXszswRhpjop.v.3dns.vip
-  skip-cert-verify: true
-  network: ws
-  ws-opts:
-    path: /ws-vmess
-    headers:
-      Host: VdBwdXszswRhpjop.v.3dns.vip
-- name: 韩国-05
-  type: vmess
-  server: fullaccesstokoreannetsubnode1.azurewebsites.net
-  port: 443
-  uuid: 274f11c6-f69b-40b9-8966-f39e06e97be7
-  alterId: 0
-  cipher: auto
-  udp: true
-  tls: true
-  servername: fullaccesstokoreannetsubnode1.azurewebsites.net
-  skip-cert-verify: true
-  network: ws
-  ws-opts:
-    path: /ws
-    headers:
-      Host: fullaccesstokoreannetsubnode1.azurewebsites.net
-- name: 其他-01
-  type: vless
-  server: 103.249.134.29
-  port: 443
-  uuid: 04c808e2-0b59-47b0-a54b-32fc7ef1c902
-  udp: true
-  tls: true
-  servername: free.cndyw.ggff.net
-  skip-cert-verify: false
-  network: ws
-  ws-opts:
-    path: /pyip=bpb.yousef.isegaro.com
-    headers:
-      Host: free.cndyw.ggff.net
-- name: 其他-02
-  type: vless
-  server: 108.162.195.58
-  port: 443
-  uuid: 29ca503d-e6b8-4509-b666-48133f450857
-  udp: true
-  tls: true
-  servername: learn00.evany.de5.net
-  skip-cert-verify: false
-  network: ws
-  ws-opts:
-    path: /fdip=tw.william.us.ci!txt
-    headers:
-      Host: learn00.evany.de5.net
-- name: 其他-03
-  type: vless
-  server: 104.17.25.32
-  port: 443
-  uuid: f5842fc5-8251-463e-ad57-350a247c20bc
-  udp: true
-  tls: true
-  servername: auto-f5842f.rohawmk.workers.dev
-  skip-cert-verify: false
-  alpn:
-  - http/1.1
-  network: ws
-  ws-opts:
-    path: /?TELEGRAM-TOOTFFARANGI?ed=2560
-    headers:
-      Host: auto-f5842f.rohawmk.workers.dev
-- name: 其他-04
-  type: vless
-  server: 104.17.163.123
-  port: 8443
-  uuid: 83adcc98-ac23-4e51-9ae0-788a73fd9939
-  udp: true
-  tls: true
-  servername: vjv62pggz1658fuliaf9lri7rra85l8utox0kjtogve4whop.zjde5.de5.net
-  skip-cert-verify: false
-  alpn:
-  - http/1.1
-  network: ws
-  ws-opts:
-    path: /
-    headers:
-      Host: vjv62pggz1658fuliaf9lri7rra85l8utox0kjtogve4whop.zjde5.de5.net
-- name: 其他-05
-  type: vless
-  server: rezeroooo3-hollowcon2.hf.space
-  port: 443
-  uuid: c8bc9e80-b5f3-4794-9b52-7be14118cbd8
-  udp: true
-  tls: true
-  servername: rezeroooo3-hollowcon2.hf.space
-  skip-cert-verify: false
-  alpn:
-  - http/1.1
-  network: ws
-  ws-opts:
-    path: /ws/c8bc9e80-b5f3-4794-9b52-7be14118cbd8
-    headers:
-      Host: rezeroooo3-hollowcon2.hf.space
 - name: 其他-06
   type: vless
-  server: 104.17.146.118
-  port: 2096
-  uuid: d342d11e-d424-4583-b36e-524ab1f0afa4
+  server: 104.21.91.244
+  port: 443
+  uuid: fdc48be3-a615-41ac-8bd1-ed844c931048
   udp: true
   tls: true
-  servername: cdn8848.776676.xyz
+  servername: 104.21.91.244
   skip-cert-verify: false
-  network: ws
-  ws-opts:
-    path: /links/shows
-    headers:
-      Host: cdn8848.776676.xyz
 - name: 其他-07
   type: vmess
-  server: 23.227.38.27
+  server: 104.19.180.169
   port: 443
-  uuid: c5a2d7b8-bf84-4f97-8577-b9b87f2baaf7
+  uuid: 824c58b1-65ba-4680-a609-663a000dbb92
   alterId: 0
   cipher: auto
   udp: true
   tls: true
-  servername: 23.227.38.27
+  servername: 104.19.180.169
   skip-cert-verify: true
   network: ws
   ws-opts:
-    path: /AUIKN8AU
-    headers:
-      Host: oplg1.cfcdn2.xyz
+    path: /wss13889
+    headers: null
 - name: 其他-08
   type: vless
-  server: 185.143.234.111
+  server: 104.17.50.227
   port: 443
-  uuid: bc4d97ba-d54f-4555-ba71-f7421796d92c
+  uuid: 4e4f1f70-5e56-4a76-bb9d-db087f4690c4
   udp: true
   tls: true
-  servername: 185.143.234.111
+  servername: jp3.yohototo.top
   skip-cert-verify: false
-- name: 其他-09
-  type: vless
-  server: de3.paxiva.ir
-  port: 443
-  uuid: 8551ef0a-8c45-41cf-99ef-61f643820121
-  udp: true
-  tls: true
-  servername: de3.paxiva.ir
-  skip-cert-verify: false
-  alpn:
-  - http/1.1
   network: ws
   ws-opts:
-    path: /21847edd
+    path: /tyxyws
     headers:
-      Host: de3.paxiva.ir
-- name: 其他-10
+      Host: jp3.yohototo.top
+- name: 其他-09
   type: vmess
-  server: 104.17.14.48
+  server: 198.41.203.3
   port: 443
-  uuid: 8f28bbbd-7dc3-4427-a8a7-595796d9ff7d
+  uuid: 33aa57df-1c93-4318-9fce-e850437ee781
   alterId: 0
   cipher: auto
   udp: true
   tls: true
-  servername: 104.17.14.48
+  servername: 198.41.203.3
   skip-cert-verify: true
   network: ws
   ws-opts:
-    path: /vmess
+    path: /dongtaiwang.com
     headers: null
+- name: 其他-10
+  type: vless
+  server: 188.114.97.0
+  port: 443
+  uuid: 6e16baf3-82cd-4e5e-bfea-5bd4d2253b4f
+  udp: true
+  tls: true
+  servername: tELEGRAM.prOXIe2-TEL.wOrKErS.DEV
+  skip-cert-verify: false
+  alpn:
+  - http/1.1
+  network: ws
+  ws-opts:
+    path: /eyJqdW5rIjoidXYyRXNUTXEiLCJwcm90b2NvbCI6InZsIiwibW9kZSI6InByb3h5aXAiLCJwYW5lbElQcyI6W119?ed=2560
+    headers:
+      Host: telegram.proxie2-tel.workers.dev
 - name: 其他-11
-  type: vless
-  server: 104.21.39.30
+  type: trojan
+  server: 104.16.174.44
   port: 443
-  uuid: 7201b2cd-0675-4c1a-9c76-07ca14ffcf08
+  password: humanity
   udp: true
-  tls: true
-  servername: 6crihfknlqjdu3yuzco9phspq86dbp6q.christanmoccasin.workers.dev
+  sni: www.ignitelimit.com
+  servername: www.ignitelimit.com
   skip-cert-verify: false
-  alpn:
-  - http/1.1
   network: ws
   ws-opts:
-    path: /eyJqdW5rIjoicHV2Z0VMNllZQmtoZEMiLCJwcm90b2NvbCI6InZsIiwibW9kZSI6InByb3h5aXAiLCJwYW5lbElQcyI6W119
-    headers:
-      Host: 6crihfknlqjdu3yuzco9phspq86dbp6q.christanmoccasin.workers.dev
+    path: /assignment
 - name: 其他-12
-  type: vless
-  server: 104.16.158.208
+  type: vmess
+  server: 188.114.96.3
   port: 443
-  uuid: fd5d3c04-9a43-7702-e70d-a3c53ff216f4
+  uuid: 03fcc618-b93d-6796-6aed-8a38c975d581
+  alterId: 0
+  cipher: auto
   udp: true
   tls: true
-  servername: ezpanslll.samankarami0686.workers.dev
-  skip-cert-verify: false
+  servername: 188.114.96.3
+  skip-cert-verify: true
   network: ws
   ws-opts:
-    path: /sync
+    path: linkvws
     headers:
-      Host: ezpanslll.samankarami0686.workers.dev
+      Host: oliv.beauty
 - name: 其他-13
-  type: vless
-  server: 104.17.171.182
-  port: 443
-  uuid: 8036f785-5b3f-4052-9e8d-01ae12d6061c
+  type: trojan
+  server: 104.18.154.96
+  port: 2083
+  password: nzrc4ma4087c1ukr
   udp: true
-  tls: true
-  servername: tElEGraM1.FreEPErsIaNLAND6.WoRKerS.DeV
+  sni: dl2.rahetejarat.com
+  servername: dl2.rahetejarat.com
   skip-cert-verify: false
-  alpn:
-  - http/1.1
-  network: ws
-  ws-opts:
-    path: /eyJqdW5rIjoiT0V3YWVlV0NnZGlvZ1ciLCJwcm90b2NvbCI6InZsIiwibW9kZSI6InByZWZpeCIsInBhbmVsSVBzIjpbIlsyNjAyOmZjNTk6YjA6NjQ6Ol0iLCJbMjYwMjpmYzU5OjExOjY0OjpdIl19?ed=2560
-    headers:
-      Host: telegram1.freepersianland6.workers.dev
 - name: 其他-14
   type: vless
-  server: www.5h.com
-  port: 443
-  uuid: 4c0b7280-76bb-495c-9c8b-f05712ebf805
+  server: 188.114.99.0
+  port: 2087
+  uuid: 5821b1f3-52c6-480c-85a2-2355b753df68
   udp: true
   tls: true
-  servername: youxuanku.kdns.fr
+  servername: nlm.tavrin-technology-services.ir
   skip-cert-verify: false
+  alpn:
+  - h3
+  - h2
+  - http/1.1
+- name: 其他-15
+  type: vmess
+  server: 104.21.7.50
+  port: 443
+  uuid: b3a21def-5fcc-47a8-a6a0-a34e29d5288a
+  alterId: 0
+  cipher: auto
+  udp: true
+  tls: true
+  servername: 104.21.7.50
+  skip-cert-verify: true
+  network: ws
+  ws-opts:
+    path: /wss51068
+    headers: null
+- name: YouTube-01
+  type: vless
+  server: 104.16.10.9
+  port: 443
+  uuid: 4e4f1f70-5e56-4a76-bb9d-db087f4690c4
+  udp: true
+  tls: true
+  servername: jp3.yohototo.top
+  skip-cert-verify: false
+  network: ws
+  ws-opts:
+    path: /tyxyws
+    headers:
+      Host: jp3.yohototo.top
+- name: YouTube-02
+  type: trojan
+  server: 104.21.37.56
+  port: 443
+  password: humanity
+  udp: true
+  sni: www.volumeroot.com
+  servername: www.volumeroot.com
+  skip-cert-verify: false
+  network: ws
+  ws-opts:
+    path: /assignment
+- name: YouTube-03
+  type: vless
+  server: wgrcqwtkfyqujs43.ghydgdbdbddvv.workers.dev
+  port: 443
+  uuid: 07821f66-cdb7-4c70-9de6-e230cffac470
+  udp: true
+  tls: true
+  servername: wgrcqwtkfyqujs43.ghydgdbdbddvv.workers.dev
+  skip-cert-verify: false
+  alpn:
+  - http/1.1
+  network: ws
+  ws-opts:
+    path: /vl/-i10VPN-i10VPN-i10VPN-i10VPN-i10VPN-i10VPN-i10VPN-i10VPN-i10VPN-i10VPN-i10VPN-i10VPN-i10VPN-i10VPN-i10VPN?ed
+- name: YouTube-04
+  type: vmess
+  server: 104.19.244.250
+  port: 443
+  uuid: b3a21def-5fcc-47a8-a6a0-a34e29d5288a
+  alterId: 0
+  cipher: auto
+  udp: true
+  tls: true
+  servername: 104.19.244.250
+  skip-cert-verify: true
+  network: ws
+  ws-opts:
+    path: /wss51068
+    headers: null
+- name: YouTube-05
+  type: trojan
+  server: 104.21.43.90
+  port: 443
+  password: 0b5fa773-6f37-4134-87d4-0c349742b6f6
+  udp: true
+  sni: app-538961.user-y0o4gm.workers.dev
+  servername: app-538961.user-y0o4gm.workers.dev
+  skip-cert-verify: true
   network: ws
   ws-opts:
     path: /
-    headers:
-      Host: youxuanku.kdns.fr
-- name: 其他-15
-  type: vless
-  server: 185.153.198.86
+- name: YouTube-06
+  type: vmess
+  server: 141.101.114.30
   port: 443
-  uuid: 04c808e2-0b59-47b0-a54b-32fc7ef1c902
+  uuid: 40d496a6-ceeb-4096-baeb-4cc52b205621
+  alterId: 0
+  cipher: auto
   udp: true
   tls: true
-  servername: free.cndyw.ggff.net
-  skip-cert-verify: false
+  servername: 141.101.114.30
+  skip-cert-verify: true
   network: ws
   ws-opts:
-    path: /pyip=bpb.yousef.isegaro.com
+    path: /ECTCJ0DF
     headers:
-      Host: free.cndyw.ggff.net
+      Host: lg1.trump2023.us
+- name: YouTube-07
+  type: vmess
+  server: 104.21.91.73
+  port: 443
+  uuid: 45f63e92-f782-4cac-84b8-e61cb5a5bfd0
+  alterId: 0
+  cipher: auto
+  udp: true
+  tls: true
+  servername: 104.21.91.73
+  skip-cert-verify: true
+  network: ws
+  ws-opts:
+    path: /linkws
+    headers:
+      Host: adenc35.fixedlfoat.top
 proxy-groups:
 - name: 总模式
   type: select
@@ -1178,10 +412,7 @@ proxy-groups:
   - 自动选择
   - 负载均衡
   - 美国
-  - 新加坡
   - 香港
-  - 日本
-  - 韩国
   - 其他地区
   - 手动选择
   - DIRECT
@@ -1194,96 +425,33 @@ proxy-groups:
   idle-timeout: 300
   proxies:
   - 其他-01
-  - 其他-01
   - 其他-02
-  - 其他-02
-  - 新加坡-01
-  - 新加坡-02
-  - 香港-01
-  - 香港-02
-  - 新加坡-03
   - 其他-03
-  - 其他-03
-  - 日本-01
   - 其他-04
-  - 其他-04
+  - 其他-05
+  - 其他-06
+  - 其他-07
+  - 其他-08
+  - 其他-08
+  - 其他-09
+  - 其他-10
+  - 其他-11
+  - 其他-12
+  - 其他-13
+  - 其他-14
+  - 其他-15
   - 美国-01
-  - 日本-02
-  - 其他-05
-  - 其他-05
-  - 其他-06
-  - 其他-06
-  - 日本-03
+  - YouTube-01
   - 美国-02
+  - 美国-02
+  - YouTube-02
+  - 香港-01
+  - YouTube-03
+  - YouTube-04
+  - YouTube-05
   - 美国-03
-  - 新加坡-04
-  - 美国-04
-  - 美国-05
-  - 其他-07
-  - 其他-07
-  - 美国-06
-  - 其他-08
-  - 其他-08
-  - 美国-07
-  - 其他-09
-  - 其他-09
-  - 其他-10
-  - 其他-10
-  - 美国-08
-  - 其他-11
-  - 其他-11
-  - 香港-03
-  - 美国-09
-  - 其他-12
-  - 其他-12
-  - 香港-04
-  - 新加坡-05
-  - 美国-10
-  - 其他-13
-  - 其他-13
-  - 韩国-01
-  - 美国-11
-  - 新加坡-06
-  - 其他-14
-  - 其他-14
-  - 美国-12
-  - 其他-15
-  - 其他-15
-  - 韩国-02
-  - 美国-13
-  - 香港-05
-  - 日本-04
-  - 日本-05
-  - 香港-06
-  - 香港-07
-  - 香港-08
-  - 香港-09
-  - 日本-06
-  - 美国-14
-  - 美国-15
-  - 香港-10
-  - 韩国-03
-  - 新加坡-07
-  - 香港-11
-  - 香港-12
-  - 香港-13
-  - 新加坡-08
-  - 新加坡-09
-  - 新加坡-10
-  - 新加坡-11
-  - 新加坡-12
-  - 日本-07
-  - 新加坡-13
-  - 日本-08
-  - 新加坡-14
-  - 香港-14
-  - 香港-15
-  - 日本-09
-  - 新加坡-15
-  - 韩国-04
-  - 日本-10
-  - 韩国-05
-  - 日本-11
+  - YouTube-06
+  - YouTube-07
 - name: 负载均衡
   type: load-balance
   url: http://cp.cloudflare.com/generate_204
@@ -1292,191 +460,65 @@ proxy-groups:
   strategy: round-robin
   proxies:
   - 其他-01
-  - 其他-01
   - 其他-02
-  - 其他-02
-  - 新加坡-01
-  - 新加坡-02
-  - 香港-01
-  - 香港-02
-  - 新加坡-03
   - 其他-03
-  - 其他-03
-  - 日本-01
   - 其他-04
-  - 其他-04
+  - 其他-05
+  - 其他-06
+  - 其他-07
+  - 其他-08
+  - 其他-08
+  - 其他-09
+  - 其他-10
+  - 其他-11
+  - 其他-12
+  - 其他-13
+  - 其他-14
+  - 其他-15
   - 美国-01
-  - 日本-02
-  - 其他-05
-  - 其他-05
-  - 其他-06
-  - 其他-06
-  - 日本-03
+  - YouTube-01
   - 美国-02
+  - 美国-02
+  - YouTube-02
+  - 香港-01
+  - YouTube-03
+  - YouTube-04
+  - YouTube-05
   - 美国-03
-  - 新加坡-04
-  - 美国-04
-  - 美国-05
-  - 其他-07
-  - 其他-07
-  - 美国-06
-  - 其他-08
-  - 其他-08
-  - 美国-07
-  - 其他-09
-  - 其他-09
-  - 其他-10
-  - 其他-10
-  - 美国-08
-  - 其他-11
-  - 其他-11
-  - 香港-03
-  - 美国-09
-  - 其他-12
-  - 其他-12
-  - 香港-04
-  - 新加坡-05
-  - 美国-10
-  - 其他-13
-  - 其他-13
-  - 韩国-01
-  - 美国-11
-  - 新加坡-06
-  - 其他-14
-  - 其他-14
-  - 美国-12
-  - 其他-15
-  - 其他-15
-  - 韩国-02
-  - 美国-13
-  - 香港-05
-  - 日本-04
-  - 日本-05
-  - 香港-06
-  - 香港-07
-  - 香港-08
-  - 香港-09
-  - 日本-06
-  - 美国-14
-  - 美国-15
-  - 香港-10
-  - 韩国-03
-  - 新加坡-07
-  - 香港-11
-  - 香港-12
-  - 香港-13
-  - 新加坡-08
-  - 新加坡-09
-  - 新加坡-10
-  - 新加坡-11
-  - 新加坡-12
-  - 日本-07
-  - 新加坡-13
-  - 日本-08
-  - 新加坡-14
-  - 香港-14
-  - 香港-15
-  - 日本-09
-  - 新加坡-15
-  - 韩国-04
-  - 日本-10
-  - 韩国-05
-  - 日本-11
+  - YouTube-06
+  - YouTube-07
 - name: 手动选择
   type: select
   proxies:
   - 自动选择
   - 其他-01
-  - 其他-01
   - 其他-02
-  - 其他-02
-  - 新加坡-01
-  - 新加坡-02
-  - 香港-01
-  - 香港-02
-  - 新加坡-03
   - 其他-03
-  - 其他-03
-  - 日本-01
   - 其他-04
-  - 其他-04
+  - 其他-05
+  - 其他-06
+  - 其他-07
+  - 其他-08
+  - 其他-08
+  - 其他-09
+  - 其他-10
+  - 其他-11
+  - 其他-12
+  - 其他-13
+  - 其他-14
+  - 其他-15
   - 美国-01
-  - 日本-02
-  - 其他-05
-  - 其他-05
-  - 其他-06
-  - 其他-06
-  - 日本-03
+  - YouTube-01
   - 美国-02
+  - 美国-02
+  - YouTube-02
+  - 香港-01
+  - YouTube-03
+  - YouTube-04
+  - YouTube-05
   - 美国-03
-  - 新加坡-04
-  - 美国-04
-  - 美国-05
-  - 其他-07
-  - 其他-07
-  - 美国-06
-  - 其他-08
-  - 其他-08
-  - 美国-07
-  - 其他-09
-  - 其他-09
-  - 其他-10
-  - 其他-10
-  - 美国-08
-  - 其他-11
-  - 其他-11
-  - 香港-03
-  - 美国-09
-  - 其他-12
-  - 其他-12
-  - 香港-04
-  - 新加坡-05
-  - 美国-10
-  - 其他-13
-  - 其他-13
-  - 韩国-01
-  - 美国-11
-  - 新加坡-06
-  - 其他-14
-  - 其他-14
-  - 美国-12
-  - 其他-15
-  - 其他-15
-  - 韩国-02
-  - 美国-13
-  - 香港-05
-  - 日本-04
-  - 日本-05
-  - 香港-06
-  - 香港-07
-  - 香港-08
-  - 香港-09
-  - 日本-06
-  - 美国-14
-  - 美国-15
-  - 香港-10
-  - 韩国-03
-  - 新加坡-07
-  - 香港-11
-  - 香港-12
-  - 香港-13
-  - 新加坡-08
-  - 新加坡-09
-  - 新加坡-10
-  - 新加坡-11
-  - 新加坡-12
-  - 日本-07
-  - 新加坡-13
-  - 日本-08
-  - 新加坡-14
-  - 香港-14
-  - 香港-15
-  - 日本-09
-  - 新加坡-15
-  - 韩国-04
-  - 日本-10
-  - 韩国-05
-  - 日本-11
+  - YouTube-06
+  - YouTube-07
 - name: 美国
   type: url-test
   url: http://cp.cloudflare.com/generate_204
@@ -1487,40 +529,6 @@ proxy-groups:
   - 美国-01
   - 美国-02
   - 美国-03
-  - 美国-04
-  - 美国-05
-  - 美国-06
-  - 美国-07
-  - 美国-08
-  - 美国-09
-  - 美国-10
-  - 美国-11
-  - 美国-12
-  - 美国-13
-  - 美国-14
-  - 美国-15
-- name: 新加坡
-  type: url-test
-  url: http://cp.cloudflare.com/generate_204
-  interval: 300
-  tolerance: 40
-  lazy: false
-  proxies:
-  - 新加坡-01
-  - 新加坡-02
-  - 新加坡-03
-  - 新加坡-04
-  - 新加坡-05
-  - 新加坡-06
-  - 新加坡-07
-  - 新加坡-08
-  - 新加坡-09
-  - 新加坡-10
-  - 新加坡-11
-  - 新加坡-12
-  - 新加坡-13
-  - 新加坡-14
-  - 新加坡-15
 - name: 香港
   type: url-test
   url: http://cp.cloudflare.com/generate_204
@@ -1529,50 +537,6 @@ proxy-groups:
   lazy: false
   proxies:
   - 香港-01
-  - 香港-02
-  - 香港-03
-  - 香港-04
-  - 香港-05
-  - 香港-06
-  - 香港-07
-  - 香港-08
-  - 香港-09
-  - 香港-10
-  - 香港-11
-  - 香港-12
-  - 香港-13
-  - 香港-14
-  - 香港-15
-- name: 日本
-  type: url-test
-  url: http://cp.cloudflare.com/generate_204
-  interval: 300
-  tolerance: 40
-  lazy: false
-  proxies:
-  - 日本-01
-  - 日本-02
-  - 日本-03
-  - 日本-04
-  - 日本-05
-  - 日本-06
-  - 日本-07
-  - 日本-08
-  - 日本-09
-  - 日本-10
-  - 日本-11
-- name: 韩国
-  type: url-test
-  url: http://cp.cloudflare.com/generate_204
-  interval: 300
-  tolerance: 40
-  lazy: false
-  proxies:
-  - 韩国-01
-  - 韩国-02
-  - 韩国-03
-  - 韩国-04
-  - 韩国-05
 - name: 其他地区
   type: url-test
   url: http://cp.cloudflare.com/generate_204
@@ -1599,17 +563,12 @@ proxy-groups:
   type: select
   proxies:
   - 美国
-  - 日本
-  - 新加坡
-  - 韩国
   - 其他地区
   - 总模式
 - name: Telegram
   type: select
   proxies:
   - 香港
-  - 新加坡
-  - 日本
   - 美国
   - 其他地区
   - 总模式
@@ -1617,9 +576,6 @@ proxy-groups:
   type: select
   proxies:
   - 美国
-  - 日本
-  - 新加坡
-  - 韩国
   - 香港
   - 其他地区
   - 总模式
@@ -1630,21 +586,15 @@ proxy-groups:
   tolerance: 40
   lazy: false
   proxies:
-  - 其他-01
-  - 其他-02
-  - 其他-03
-  - 其他-04
-  - 其他-05
-  - 其他-06
-  - 其他-07
   - 其他-08
-  - 其他-09
-  - 其他-10
-  - 其他-11
-  - 其他-12
-  - 其他-13
-  - 其他-14
-  - 其他-15
+  - YouTube-01
+  - 美国-02
+  - YouTube-02
+  - YouTube-03
+  - YouTube-04
+  - YouTube-05
+  - YouTube-06
+  - YouTube-07
   - 总模式
 - name: Apple
   type: select
@@ -1666,10 +616,7 @@ proxy-groups:
   - 负载均衡
   - 手动选择
   - 美国
-  - 新加坡
   - 香港
-  - 日本
-  - 韩国
   - 其他地区
   - DIRECT
 rules:
