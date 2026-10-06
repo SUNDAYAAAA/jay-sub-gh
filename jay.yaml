@@ -446,14 +446,6 @@ proxies:
   password: pno0e2keji2gsfea
   udp: true
 - name: 香港-08
-  type: hysteria2
-  server: 4dfe79ca-tmm5c0-tpftcp-13x18.hk3.hyhuawei.com
-  port: 443
-  password: e4499a62-0cfe-11eb-ad8c-f23c9164ca5d
-  udp: true
-  sni: 127.0.0.1
-  skip-cert-verify: true
-- name: 香港-09
   type: vless
   server: apinbxs.zalolink.com
   port: 44988
@@ -466,7 +458,7 @@ proxies:
   skip-cert-verify: true
   client-fingerprint: chrome
   flow: xtls-rprx-vision
-- name: 香港-10
+- name: 香港-09
   type: vmess
   server: ADncdOvLHR4M1P36.v.3dns.vip
   port: 443
@@ -482,7 +474,7 @@ proxies:
     path: /ws-vmess
     headers:
       Host: ADncdOvLHR4M1P36.v.3dns.vip
-- name: 香港-11
+- name: 香港-10
   type: vmess
   server: 47.86.167.194
   port: 800
@@ -491,7 +483,7 @@ proxies:
   cipher: auto
   udp: true
   network: http
-- name: 香港-12
+- name: 香港-11
   type: trojan
   server: 7d0a2gz0-7a0c.aws-agent.net
   port: 12142
@@ -500,27 +492,35 @@ proxies:
   sni: m.ctrip.com
   servername: m.ctrip.com
   skip-cert-verify: true
-- name: 香港-13
+- name: 香港-12
   type: trojan
   server: official.taipeicitygovernment.kiev.ua
   port: 8443
   password: 96983eb4-c8f1-316e-ab00-500014ed3d8b
   udp: true
   skip-cert-verify: false
-- name: 香港-14
+- name: 香港-13
   type: trojan
   server: just-alpaca.rooster465.autos
   port: 443
   password: IL37892054
   udp: true
   skip-cert-verify: false
-- name: 香港-15
+- name: 香港-14
   type: trojan
   server: 209.248.32.116
   port: 28101
   password: i99Cef
   udp: true
   skip-cert-verify: false
+- name: 香港-15
+  type: vmess
+  server: v33.hdacd.com
+  port: 30833
+  uuid: cbb3f877-d1fb-344c-87a9-d153bffd5484
+  alterId: 2
+  cipher: auto
+  udp: true
 - name: 日本-01
   type: vless
   server: 141.11.139.215
@@ -832,21 +832,13 @@ proxies:
   password: WAqeGA+dU+HZYSipCio+Jmt7SSVfHjwMH7j8xmsm7/s=:althddZ27iu261I+568pk7HZzBFDCyIx6pvG8H9oXow=
   udp: true
 - name: 其他-05
-  type: hysteria2
-  server: 91.196.32.163
-  port: 443
-  password: mkL3AfdSZIpTWRB9TcWPn9vywPGN89MRHg3ToRDj
-  udp: true
-  sni: germany3.h2corp.local
-  skip-cert-verify: false
-- name: 其他-06
   type: trojan
   server: 104.18.32.87
   port: 443
   password: 018b8e7b-7813-4dcb-84a5-3c98f1521e00
   udp: true
   skip-cert-verify: false
-- name: 其他-07
+- name: 其他-06
   type: vless
   server: 77.220.213.42
   port: 33558
@@ -857,14 +849,14 @@ proxies:
   public-key: oDtto9n7VP7EOuxXlMBWrzKS3ohZLAHYb2iZhKr9bQE
   short-id: 19ee
   skip-cert-verify: true
-- name: 其他-08
+- name: 其他-07
   type: ss
   server: 20.108.42.173
   port: 443
   cipher: chacha20-ietf-poly1305
   password: W74XFALLLuw6m5IA
   udp: true
-- name: 其他-09
+- name: 其他-08
   type: vless
   server: birthdaysale.net
   port: 8443
@@ -876,14 +868,14 @@ proxies:
   alpn:
   - h2
   - http/1.1
-- name: 其他-10
+- name: 其他-09
   type: ss
   server: 209.46.102.22
   port: 8388
   cipher: chacha20-ietf-poly1305
   password: 1hhrqrokj3ag
   udp: true
-- name: 其他-11
+- name: 其他-10
   type: vmess
   server: www.finland1.henlo.ir
   port: 443
@@ -891,7 +883,7 @@ proxies:
   alterId: 0
   cipher: auto
   udp: true
-- name: 其他-12
+- name: 其他-11
   type: vless
   server: 65.109.238.140
   port: 443
@@ -902,7 +894,7 @@ proxies:
   skip-cert-verify: false
   alpn:
   - h2
-- name: 其他-13
+- name: 其他-12
   type: vless
   server: 194.87.143.165
   port: 8443
@@ -916,7 +908,7 @@ proxies:
     path: /
     headers:
       Host: 194.87.143.165
-- name: 其他-14
+- name: 其他-13
   type: vless
   server: e3k67dwms3-51255166202-direct.tavafog.com
   port: 443
@@ -929,7 +921,7 @@ proxies:
   - h2
   client-fingerprint: chrome
   flow: xtls-rprx-vision
-- name: 其他-15
+- name: 其他-14
   type: vless
   server: tickets.betust.net
   port: 443
@@ -942,7 +934,7 @@ proxies:
   skip-cert-verify: true
   client-fingerprint: chrome
   flow: xtls-rprx-vision
-- name: YouTube-01
+- name: 其他-15
   type: vless
   server: summerculture.net
   port: 8443
@@ -983,29 +975,29 @@ proxy-groups:
   - 其他-03
   - 其他-03
   - 其他-04
-  - 其他-05
   - 其他-04
+  - 其他-05
   - 其他-06
   - 其他-07
-  - 其他-08
+  - 其他-05
   - 其他-06
   - 其他-07
   - 其他-08
   - 其他-09
   - 其他-10
-  - 其他-11
+  - 其他-08
   - 其他-09
   - 其他-10
   - 其他-11
+  - 其他-11
   - 其他-12
   - 其他-12
   - 其他-13
+  - 其他-14
+  - 其他-15
+  - 其他-15
   - 其他-13
   - 其他-14
-  - 其他-15
-  - YouTube-01
-  - 其他-14
-  - 其他-15
   - 美国-01
   - 香港-01
   - 美国-02
@@ -1046,16 +1038,15 @@ proxy-groups:
   - 日本-05
   - 新加坡-07
   - 韩国-06
-  - 香港-08
   - 韩国-07
   - 韩国-08
   - 韩国-09
   - 韩国-10
+  - 香港-08
   - 香港-09
-  - 香港-10
   - 新加坡-08
   - 日本-06
-  - 香港-11
+  - 香港-10
   - 日本-07
   - 韩国-11
   - 新加坡-09
@@ -1065,19 +1056,20 @@ proxy-groups:
   - 新加坡-12
   - 日本-08
   - 韩国-13
+  - 香港-11
   - 香港-12
-  - 香港-13
   - 日本-09
   - 韩国-14
   - 日本-10
   - 日本-11
   - 日本-12
   - 新加坡-13
-  - 香港-14
+  - 香港-13
   - 新加坡-14
-  - 香港-15
+  - 香港-14
   - 新加坡-15
   - 韩国-15
+  - 香港-15
   - 日本-13
   - 日本-14
   - 日本-15
@@ -1095,29 +1087,29 @@ proxy-groups:
   - 其他-03
   - 其他-03
   - 其他-04
-  - 其他-05
   - 其他-04
+  - 其他-05
   - 其他-06
   - 其他-07
-  - 其他-08
+  - 其他-05
   - 其他-06
   - 其他-07
   - 其他-08
   - 其他-09
   - 其他-10
-  - 其他-11
+  - 其他-08
   - 其他-09
   - 其他-10
   - 其他-11
+  - 其他-11
   - 其他-12
   - 其他-12
   - 其他-13
+  - 其他-14
+  - 其他-15
+  - 其他-15
   - 其他-13
   - 其他-14
-  - 其他-15
-  - YouTube-01
-  - 其他-14
-  - 其他-15
   - 美国-01
   - 香港-01
   - 美国-02
@@ -1158,16 +1150,15 @@ proxy-groups:
   - 日本-05
   - 新加坡-07
   - 韩国-06
-  - 香港-08
   - 韩国-07
   - 韩国-08
   - 韩国-09
   - 韩国-10
+  - 香港-08
   - 香港-09
-  - 香港-10
   - 新加坡-08
   - 日本-06
-  - 香港-11
+  - 香港-10
   - 日本-07
   - 韩国-11
   - 新加坡-09
@@ -1177,19 +1168,20 @@ proxy-groups:
   - 新加坡-12
   - 日本-08
   - 韩国-13
+  - 香港-11
   - 香港-12
-  - 香港-13
   - 日本-09
   - 韩国-14
   - 日本-10
   - 日本-11
   - 日本-12
   - 新加坡-13
-  - 香港-14
+  - 香港-13
   - 新加坡-14
-  - 香港-15
+  - 香港-14
   - 新加坡-15
   - 韩国-15
+  - 香港-15
   - 日本-13
   - 日本-14
   - 日本-15
@@ -1204,29 +1196,29 @@ proxy-groups:
   - 其他-03
   - 其他-03
   - 其他-04
-  - 其他-05
   - 其他-04
+  - 其他-05
   - 其他-06
   - 其他-07
-  - 其他-08
+  - 其他-05
   - 其他-06
   - 其他-07
   - 其他-08
   - 其他-09
   - 其他-10
-  - 其他-11
+  - 其他-08
   - 其他-09
   - 其他-10
   - 其他-11
+  - 其他-11
   - 其他-12
   - 其他-12
   - 其他-13
+  - 其他-14
+  - 其他-15
+  - 其他-15
   - 其他-13
   - 其他-14
-  - 其他-15
-  - YouTube-01
-  - 其他-14
-  - 其他-15
   - 美国-01
   - 香港-01
   - 美国-02
@@ -1267,16 +1259,15 @@ proxy-groups:
   - 日本-05
   - 新加坡-07
   - 韩国-06
-  - 香港-08
   - 韩国-07
   - 韩国-08
   - 韩国-09
   - 韩国-10
+  - 香港-08
   - 香港-09
-  - 香港-10
   - 新加坡-08
   - 日本-06
-  - 香港-11
+  - 香港-10
   - 日本-07
   - 韩国-11
   - 新加坡-09
@@ -1286,19 +1277,20 @@ proxy-groups:
   - 新加坡-12
   - 日本-08
   - 韩国-13
+  - 香港-11
   - 香港-12
-  - 香港-13
   - 日本-09
   - 韩国-14
   - 日本-10
   - 日本-11
   - 日本-12
   - 新加坡-13
-  - 香港-14
+  - 香港-13
   - 新加坡-14
-  - 香港-15
+  - 香港-14
   - 新加坡-15
   - 韩国-15
+  - 香港-15
   - 日本-13
   - 日本-14
   - 日本-15
@@ -1473,6 +1465,7 @@ proxy-groups:
   - 其他-02
   - 其他-03
   - 其他-04
+  - 其他-05
   - 其他-06
   - 其他-07
   - 其他-08
@@ -1480,10 +1473,9 @@ proxy-groups:
   - 其他-10
   - 其他-11
   - 其他-12
-  - 其他-13
-  - YouTube-01
-  - 其他-14
   - 其他-15
+  - 其他-13
+  - 其他-14
   - 总模式
 - name: Apple
   type: select
