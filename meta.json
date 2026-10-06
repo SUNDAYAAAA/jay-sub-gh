@@ -1,9 +1,9 @@
 {
- "nodes": 90,
+ "nodes": 83,
  "groups": 17,
  "rules": 3847,
  "skipped_parse": 0,
- "built_at": "2026-10-06 14:32:10",
+ "built_at": "2026-10-06 15:39:57",
  "regions": {
   "OTHER": 867,
   "DE": 95,
